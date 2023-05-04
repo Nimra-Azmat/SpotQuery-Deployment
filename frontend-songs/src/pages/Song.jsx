@@ -31,7 +31,7 @@ export default function Song() {
     const handleSearch = async () => {
         setIsLoading(true);
         try {
-            const response = await fetch(`http://127.0.0.1:8000/songs/showsong/`, {
+            const response = await fetch(`https://songapp-react-django-nimra-dot-cloud-work-314310.ew.r.appspot.com/songs/showsong/`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
