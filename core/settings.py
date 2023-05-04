@@ -24,8 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('DJANGO_SECRET_NIMRA', None)
-print("------------------", SECRET_KEY)
+# SECRET_KEY = os.getenv('DJANGO_SECRET_NIMRA', None)
+SECRET_KEY = 'django-insecure-epfx^hw#ls)npzzn!sdi&*f2=qodfyqvys)man8+o689h5z92t'
+# print("------------------", SECRET_KEY)
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -139,13 +140,23 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'HOST': os.getenv('DB_HOST_NIMRA', None),
+#         'USER': os.getenv('DB_USER_NIMRA', None),
+#         'PASSWORD': os.getenv('DB_PWD_NIMRA', None),
+#         'NAME': os.getenv('DB_NAME_NIMRA', None),
+#         # 'PORT': os.getenv('DB_PORT_NIMRA', None)
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': os.getenv('DB_HOST_NIMRA', None),
-        'USER': os.getenv('DB_USER_NIMRA', None),
-        'PASSWORD': os.getenv('DB_PWD_NIMRA', None),
-        'NAME': os.getenv('DB_NAME_NIMRA', None),
+        'HOST': '/cloudsql/cloud-work-314310:us-central1:training-week',
+        'USER': 'rafi',
+        'PASSWORD': 'u\oV|vXT4N~TR;3m',
+        'NAME': 'rafi_db',
         # 'PORT': os.getenv('DB_PORT_NIMRA', None)
     }
 }
