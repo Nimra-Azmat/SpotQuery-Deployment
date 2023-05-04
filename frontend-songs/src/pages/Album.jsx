@@ -30,7 +30,7 @@ export default function Album() {
   const handleSearch = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch(`https://songapp-react-django-nimra-dot-cloud-work-314310.ew.r.appspot.com/albums/showalbums/`, {
+      const response = await fetch(`https://songapp-react-django-nimra-dot-cloud-work-314310.ew.r.appspot.com//albums/showalbums/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

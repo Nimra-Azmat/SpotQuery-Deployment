@@ -43,6 +43,7 @@ export const AuthProvider = ({children}) =>{
         history('/login')
     }
     let updateToken = async ()=> {
+        // let response = await fetch(`https://songapp-react-django-nimra-dot-cloud-work-314310.ew.r.appspot.com/api/token/refresh/`, {
 
         let response = await fetch(`https://songapp-react-django-nimra-dot-cloud-work-314310.ew.r.appspot.com/api/token/refresh/`, {
             method:'POST',

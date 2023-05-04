@@ -152,14 +152,26 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'HOST': '/cloudsql/cloud-work-314310:us-central1:training-week',
-        'USER': 'rafi',
-        'PASSWORD': 'u\oV|vXT4N~TR;3m',
-        'NAME': 'rafi_db',
-        # 'PORT': os.getenv('DB_PORT_NIMRA', None)
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'HOST': "/cloudsql/cloud-work-314310:us-central1:training-week",
+        'USER': "muzamal",
+        'PASSWORD': "abcd1234",
+        'NAME': "muzamal_db",
+        # 'PORT': 5433,
     }
 }
+# DATABASES = {
+#     'default': {
+#         # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'HOST': '127.0.0.1',
+#         # 'HOST': '/cloudsql/cloud-work-314310:us-central1:training-week',
+#         'USER': 'rafi',
+#         'PASSWORD': 'u\oV|vXT4N~TR;3m',
+#         'NAME': 'rafi_db',
+#         'PORT': '5433'
+#     }
+# }
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
