@@ -132,23 +132,23 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'HOST': os.getenv('DB_HOST_NIMRA', None),
-#         'USER': os.getenv('DB_USER_NIMRA', None),
-#         'PASSWORD': os.getenv('DB_PWD_NIMRA', None),
-#         'NAME': os.getenv('DB_NAME_NIMRA', None),
-#         # 'PORT': os.getenv('DB_PORT_NIMRA', None)
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': os.getenv('DB_HOST_NIMRA', None),
+        'USER': os.getenv('DB_USER_NIMRA', None),
+        'PASSWORD': os.getenv('DB_PWD_NIMRA', None),
+        'NAME': os.getenv('DB_NAME_NIMRA', None),
+        # 'PORT': os.getenv('DB_PORT_NIMRA', None)
+    }
+}
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
