@@ -15,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { TbReportSearch } from "react-icons/tb";
 import AuthContext from "../context/AuthContext";
+import {base_url} from './base_url';
 
 export default function Song() {
     let {bgcolor} =useColorModeValue('black.500','whiteAlpha.100')
@@ -31,7 +32,7 @@ export default function Song() {
     const handleSearch = async () => {
         setIsLoading(true);
         try {
-            const response = await fetch(`https://songapp-react-django-nimra-dot-cloud-work-314310.ew.r.appspot.com/songs/showsong/`, {
+            const response = await fetch(`${base_url}songs/showsong/`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

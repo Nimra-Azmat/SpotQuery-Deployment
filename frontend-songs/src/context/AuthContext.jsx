@@ -1,6 +1,7 @@
 import  { createContext, useState, useEffect} from 'react'
 import jwt_decode from "jwt-decode"
 import { useNavigate } from 'react-router-dom'
+import {base_url} from './base_url'
 
 const AuthContext = createContext()
 
@@ -17,7 +18,7 @@ export const AuthProvider = ({children}) =>{
     let loginUser = async (e)=>{
         e.preventDefault()
         console.log('Form Submitted')
-        let response = await fetch(`https://songapp-react-django-nimra-dot-cloud-work-314310.ew.r.appspot.com/api/token/`,{
+        let response = await fetch(`${base_url}api/token/`,{
             method: 'POST',
             headers:{
                 'Content-Type':'application/json'
@@ -45,7 +46,7 @@ export const AuthProvider = ({children}) =>{
     let updateToken = async ()=> {
         // let response = await fetch(`https://songapp-react-django-nimra-dot-cloud-work-314310.ew.r.appspot.com/api/token/refresh/`, {
 
-        let response = await fetch(`https://songapp-react-django-nimra-dot-cloud-work-314310.ew.r.appspot.com/api/token/refresh/`, {
+        let response = await fetch(`${base_url}api/token/refresh/`, {
             method:'POST',
             headers:{
                 'Content-Type':'application/json'

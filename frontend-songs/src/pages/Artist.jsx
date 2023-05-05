@@ -1,7 +1,7 @@
 import { Flex,  Heading, Text, Box, Button, Stack,useColorModeValue } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { TiArrowRightOutline, TiArrowLeftOutline } from "react-icons/ti";
-
+import {base_url} from './base_url';
 
 export default function Artist() {
   let {bgcolor} =useColorModeValue('black.500','whiteAlpha.100')
@@ -11,7 +11,7 @@ export default function Artist() {
   const [nextPage, setNextPage] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   useEffect(() => {
-    fetch(`https://songapp-react-django-nimra-dot-cloud-work-314310.ew.r.appspot.com/artists/showartist/?page=${currentPage}`)
+    fetch(`${base_url}artists/showartist/?page=${currentPage}`)
       .then(response => response.json())
       .then(data => {
         setArtists(data.artists);

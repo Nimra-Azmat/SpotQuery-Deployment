@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { TbMoodSearch } from "react-icons/tb";
 import AuthContext from "../context/AuthContext";
-
+import {base_url} from './base_url';
 
 export default function Album() {
   let {bgcolor} =useColorModeValue('black.500','whiteAlpha.100')
@@ -30,7 +30,7 @@ export default function Album() {
   const handleSearch = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch(`https://songapp-react-django-nimra-dot-cloud-work-314310.ew.r.appspot.com/albums/showalbums/`, {
+      const response = await fetch(`${base_url}albums/showalbums/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
