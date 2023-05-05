@@ -1,1 +1,1 @@
-export const base_url ='http://localhost:8000/'
+export const base_url ='https://songapp-react-django-nimra-dot-cloud-work-314310.ew.r.appspot.com/'
