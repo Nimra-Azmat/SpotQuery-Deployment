@@ -147,12 +147,12 @@ WSGI_APPLICATION = "core.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "HOST": "127.0.0.1",
-        # 'HOST': "/cloudsql/cloud-work-314310:us-central1:training-week",
+        # "HOST": "127.0.0.1",
+        "HOST": "/cloudsql/cloud-work-314310:us-central1:training-week",
         "USER": "muzamal",
         "PASSWORD": "abcd1234",
         "NAME": "muzamal_db",
-        "PORT": 5433,
+        # "PORT": 5433,
     }
 }
 # DATABASES = {
