@@ -128,10 +128,10 @@ export default function Song() {
                                         <Text sx={Text_Prop}>Duration: </Text>
                                         <Text sx={Text_display}>{song.duration_ms}</Text>
                                     </Flex>
-                                    <Flex >
+                                    {/* <Flex >
                                         <Text sx={Text_Prop}>Release Date: </Text>
                                         <Text sx={Text_display}>{song.release_date}</Text>
-                                    </Flex>
+                                    </Flex> */}
 
                                 </Flex>
 
