@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { TbReportSearch } from "react-icons/tb";
 import AuthContext from "../context/AuthContext";
-import {base_url} from './base_url';
+import {base_url} from '../base_url';
 
 export default function Song() {
     let {bgcolor} =useColorModeValue('black.500','whiteAlpha.100')

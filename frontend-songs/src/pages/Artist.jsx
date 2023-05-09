@@ -1,7 +1,7 @@
 import { Flex,  Heading, Text, Box, Button, Stack,useColorModeValue } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { TiArrowRightOutline, TiArrowLeftOutline } from "react-icons/ti";
-import {base_url} from './base_url';
+import {base_url} from '../base_url';
 
 export default function Artist() {
   let {bgcolor} =useColorModeValue('black.500','whiteAlpha.100')

@@ -13,8 +13,9 @@ const ToggleColorMode = () => {
       right="0"
       m="1rem"
     >
+
       {colorMode === "dark" ? (
-        <SunIcon color="orange.200" />
+        <SunIcon color="orange.200"/>
       ) : (
         <MoonIcon color="blue.700" />
       )}

@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { TbMoodSearch } from "react-icons/tb";
 import AuthContext from "../context/AuthContext";
-import {base_url} from './base_url';
+import {base_url} from '../base_url';
 
 export default function Album() {
   let {bgcolor} =useColorModeValue('black.500','whiteAlpha.100')

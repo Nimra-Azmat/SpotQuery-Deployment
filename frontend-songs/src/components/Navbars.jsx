@@ -8,11 +8,10 @@ import ToggleColorMode from '../components/ToggleColorMode'
 export default function Navbars() {
     return (
         <>
-        <VStack
+    <VStack
         divider={<StackDivider/>}
         spacing={4}
-        align='stretch'
-      >
+        align='stretch'>
         <ToggleColorMode />
     <Spacer/>
     <Flex minWidth='max-content' alignItems='center' gap='2'>
@@ -23,6 +22,7 @@ export default function Navbars() {
         </Heading>
         </Box>
         <Spacer />
+     
         <ButtonGroup gap='2'>
             <Button as={Link} to="/" leftIcon={<RxDashboard />} colorScheme='purple' variant='ghost'>Dashboard</Button>
             <Button as={Link} to="/Artist" leftIcon={<SlEarphones />} colorScheme='purple' variant='ghost'>Artist</Button>
