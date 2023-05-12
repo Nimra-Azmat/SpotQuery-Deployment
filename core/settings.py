@@ -117,7 +117,7 @@ DATABASES = {
         "USER": os.getenv("DB_USER_NIMRA", None),
         "PASSWORD": os.getenv("DB_PWD_NIMRA", None),
         "NAME": os.getenv("DB_NAME_NIMRA", None),
-        # 'PORT': os.getenv('DB_PORT_NIMRA', None)
+        # "PORT": os.getenv("DB_PORT_NIMRA", None),
     }
 }
 

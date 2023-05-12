@@ -8,7 +8,6 @@ const AuthContext = createContext()
 export default AuthContext;
 
 export const AuthProvider = ({children}) =>{
-
     
     let history = useNavigate()
     let [authTokens, setAuthTokens] = useState(() => localStorage.getItem('authTokens')? JSON.parse(localStorage.getItem('authTokens')): null)
