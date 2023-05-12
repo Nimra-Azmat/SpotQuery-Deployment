@@ -13,8 +13,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = os.getenv('DJANGO_SECRET_NIMRA', None)
-SECRET_KEY = "django-insecure-epfx^hw#ls)npzzn!sdi&*f2=qodfyqvys)man8+o689h5z92t"
+SECRET_KEY = os.getenv("DJANGO_SECRET_NIMRA", None)
+# SECRET_KEY = "django-insecure-epfx^hw#ls)npzzn!sdi&*f2=qodfyqvys)man8+o689h5z92t"
 # print("------------------", SECRET_KEY)
 
 
@@ -208,8 +208,8 @@ REST_FRAMEWORK = {
 }
 
 STATICFILES_DIRS = (
-    os.path.join(os.path.join(BASE_DIR, "frontend-songs"), "build", "static"),
-    os.path.join(os.path.join(BASE_DIR, "frontend-songs"), "build"),
+    os.path.join(os.path.join(BASE_DIR, "SpotQuery-Final"), "build", "static"),
+    os.path.join(os.path.join(BASE_DIR, "SpotQuery-Final"), "build"),
 )
 
 CORS_ALLOW_ALL_ORIGINS = True
