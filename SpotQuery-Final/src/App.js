@@ -18,10 +18,9 @@ function App() {
           <Route path="/" element={<RootLayout />}>
             <Route index element={<Profile />} />
               <Route path="/login" element={<LoginPage />} />
-             
+              <Route path="/artist" element={<Artist />} />
               <Route path='*' element={<NotFound/>}/>
               <Route element={<ProtectedRoute/>}>    
-                <Route path="/artist" element={<Artist />} />
                 <Route path="/album" element={<Album />} />
                 <Route path="/song" element={<Song />} />
               </Route>

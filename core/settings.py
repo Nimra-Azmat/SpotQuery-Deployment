@@ -27,8 +27,8 @@ sentry_sdk.init(
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = os.getenv("DJANGO_SECRET_NIMRA", None)
-SECRET_KEY = "django-insecure-epfx^hw#ls)npzzn!sdi&*f2=qodfyqvys)man8+o689h5z92t"
+SECRET_KEY = os.getenv("DJANGO_SECRET_NIMRA", None)
+# SECRET_KEY = "django-insecure-epfx^hw#ls)npzzn!sdi&*f2=qodfyqvys)man8+o689h5z92t"
 # print("------------------", SECRET_KEY)
 
 
