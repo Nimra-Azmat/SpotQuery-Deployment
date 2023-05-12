@@ -9,6 +9,7 @@ export default function Artist() {
   const [previousPage, setPreviousPage] = useState(null);
   const [nextPage, setNextPage] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
+
   useEffect(() => {
     fetch(`${base_url}artists/showartist/?page=${currentPage}`)
       .then(response => response.json())
@@ -37,6 +38,7 @@ String(artists)
   });
 
   return (
+
     <>
      <Box w={'100%'}  mx='auto'>
   <Text fontSize="3xl" fontWeight="extrabold"  textAlign= "center" bgGradient="linear(to-r,  purple.300, green.500)" bgClip='text'  >Artists
@@ -53,6 +55,7 @@ String(artists)
           </li>
         ))}</ul>  </Box>
      </Flex>    
+
     <Spacer /> 
     <Flex align="center" justify='center'>
     <Stack mt={4} direction='row' spacing={4} align='center'>
@@ -63,7 +66,8 @@ String(artists)
         Next
       </Button>
     </Stack>
-    </Flex></Box>
+    </Flex>
+    </Box>
     </> 
   )
 }
