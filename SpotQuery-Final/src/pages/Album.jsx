@@ -59,6 +59,7 @@ export default function Album() {
         spacing="100px" p={isNotSmallerScreen ? "10" : "0"}
         alignSelf="flex-start">
     
+    
     <Box w={'100%'}  mx='auto'>
       <Heading fontSize="3xl" fontWeight="bold"  textAlign= "center" bgGradient="linear(to-r,  purple.300, green.500)" bgClip='text'  >Album</Heading>
       <FormControl id="artistName">
@@ -69,6 +70,7 @@ export default function Album() {
             onChange={(e) => setArtistName(e.target.value)}
           />
         </FormControl>
+
         <Flex align="center" justify='center' direction={isNotSmallerScreen ? "row" : "column"}
         spacing="100px" p={isNotSmallerScreen ? "10" : "0"}>
           <Button  mt={4} onClick={handleSearch} isLoading={isLoading} leftIcon={<TbReportSearch />} colorScheme='purple' variant='outline'>
